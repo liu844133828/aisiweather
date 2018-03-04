@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aisiweather.android.service.AutoUpdateService;
@@ -30,6 +31,7 @@ public class SettingUpdateActivity extends AppCompatActivity {
     private CustomSeekBar seekBar;
     private ArrayList<String> volumeSections = new ArrayList<String>();
     private ImageView imaBack;
+    private TextView textUpdateSign;
 
 
     @Override
@@ -42,6 +44,7 @@ public class SettingUpdateActivity extends AppCompatActivity {
     private void initView(){
         switchButton = (SwitchButton) findViewById(R.id.switch_button);
         seekBarLayout = (LinearLayout) findViewById(R.id.seek_bar_layout);
+        textUpdateSign = (TextView) findViewById(R.id.update_sign);
 
         if (WeatherActivity.aisiweather){
             Log.d(TAG,"自动更新");
@@ -59,6 +62,7 @@ public class SettingUpdateActivity extends AppCompatActivity {
                     //打开状态
                     case 1:
                         seekBarLayout.setVisibility(View.VISIBLE);
+                        textUpdateSign.setVisibility(View.VISIBLE);
                         //开启后台更新天气的服务
                         WeatherActivity.aisiweather = true;
                         Intent intentOpen = new Intent(SettingUpdateActivity.this,AutoUpdateService.class);
@@ -68,6 +72,7 @@ public class SettingUpdateActivity extends AppCompatActivity {
                     //关闭状态
                     case 0:
                         seekBarLayout.setVisibility(View.GONE);
+                        textUpdateSign.setVisibility(View.GONE);
                         //关闭后台更新的服务
                         WeatherActivity.aisiweather = false;
                         Intent intentClose = new Intent(SettingUpdateActivity.this,AutoUpdateService.class);
