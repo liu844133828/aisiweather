@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_select_city"
+            android:icon="@drawable/nav_city"
+            android:title="@string/select_city"/>
+        <item android:id="@+id/nav_clear_cache"
+            android:icon="@drawable/clear_cache"
+            android:title="@string/clear_cache"/>
+        <item android:id="@+id/nav_download_background"
+            android:icon="@drawable/download_background"
+            android:title="@string/download_background"/>
+        <item android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting"/>
+    </group>
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/layout_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_update"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/right"
+                android:text="@string/setting_update" />
+            <View
+                android:background="@color/black4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/text_notification"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="@string/notification" />
+            <View
+                android:background="@color/black4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="隐私" />
+            <View
+                android:background="@color/black4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/text2"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="通用" />
+            <View
+                android:background="@color/black4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="关于" />
+            <View
+                android:background="@color/black4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

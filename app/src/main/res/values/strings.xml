@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">艾斯天气</string>
+    <string name="select_city">选择城市</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="download_background">保存背景</string>
+    <string name="setting">设置</string>
+
+    <string name="setting_update">天气更新</string>
+    <string name="notification">新消息通知</string>
+    <string name="self_update">后台自动更新</string>
+    <string name="update_count">后台更新频率(次/小时)</string>
+    <string name="title_setting">设置</string>
+
+
 </resources>

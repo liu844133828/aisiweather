@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switch_layout"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_switch_bottom_open">
+
+    <View
+        android:id="@+id/view_switch"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_switch_top_open"/>
+
+
+</RelativeLayout>
