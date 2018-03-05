@@ -17,24 +17,34 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SplashActivity"
             android:launchMode="singleTask"
-            android:configChanges="locale|orientation|keyboardHidden">
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".WeatherActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"/>
+
         <activity android:name=".MainActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"/>
+
         <activity android:name=".GuideActivity"
             android:launchMode="singleTask"
-            android:configChanges="locale|orientation|keyboardHidden"/>
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".SettingActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"/>
+
         <activity android:name=".SettingUpdateActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"/>
 
         <service
             android:name=".service.AutoUpdateService"
